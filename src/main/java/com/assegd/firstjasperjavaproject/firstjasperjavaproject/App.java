@@ -20,7 +20,7 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 public class App {
 	public static void main(String[] args) throws JRException {
 
-		String sourceFileName = "C://Users//aAsfaw//JaspersoftWorkspace//FirstJasperProject//JasperReport_A4.jrxml";
+		String sourceFileName = "C://Jasper Reports in Java//Jasper Project//JasperReport_A4.jrxml";
 
 		JasperReport jasperReport = null;
 
@@ -42,9 +42,9 @@ public class App {
 
 		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, params, dataSource);
 
-		String pathPdf = "C://Users//aAsfaw//JaspersoftWorkspace//FirstJasperProject//ExportedJasperReports//demoReportOutput.pdf";
-		String pathHtml = "C://Users//aAsfaw//JaspersoftWorkspace//FirstJasperProject//ExportedJasperReports//demoReportOutput.html";
-		String pathXml = "C://Users//aAsfaw//JaspersoftWorkspace//FirstJasperProject//ExportedJasperReports//demoReportOutput.xml";
+		String pathPdf = "C://Jasper Reports in Java//demoReportOutput.pdf";
+		String pathHtml = "C://Jasper Reports in Java//demoReportOutput.html";
+		String pathXml = "C://Jasper Reports in Java//demoReportOutput.xml";
 
 		JasperExportManager.exportReportToPdfFile(jasperPrint, pathPdf);
 		JasperExportManager.exportReportToHtmlFile(jasperPrint, pathHtml);
